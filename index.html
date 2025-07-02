@@ -40,9 +40,9 @@
     <section id="langages">
     <div class="bloc-langage" style="--r: 0.15;"><h2>Administration système : </h2><p>Fedora, Virtual box, Docker</p></div>
     <div class="bloc-langage" style="--r: 0.65;"><h2>Tests automatisés fonctionnels : </h2><p>Python, Selenium, Robot Framework, Pytest</p></div>
-    <div class="bloc-langage" style="--r: 0.65;"><h2>Tests automatisés systèmes et API : </h2><p>Postman</p></div>
+    <div class="bloc-langage" style="--r: 0.65;"><h2>Tests automatisés de système/API : </h2><p>Postman, SOAP UI</p></div>
     <div class="bloc-langage" style="--r: 0.35;"><h2>Editeurs de code : </h2><p>VS Code, Cursor, Windsurf</p></div>
-    <div class="bloc-langage" style="--r: 0.9;"><h2>Web Frontend : </h2><p>HTML, CSS, Tailwind CSS</p></div>
+    <div class="bloc-langage" style="--r: 0.9;"><h2>Web Frontend : </h2><p>HTML, CSS, Tailwind CSS, javascript</p></div>
     <div class="bloc-langage" style="--r: 0.9;"><h2>API rest et soap : </h2><p>json, XML</p></div>
     <div class="bloc-langage" style="--r: 0.2;"><h2>IA / DATA : </h2><p>ChatGPT, Grok, AI Studio, Perplexity, Le chat</p></div>
     <div class="bloc-langage" style="--r: 0.7;"><h2>Outils de gestion de projet : </h2><p>Jira, Test director</p></div>
@@ -90,26 +90,7 @@
 
   <!-- Scripts -->
   <script>
-    // Papillon animé
-    const butterfly = document.getElementById('butterfly');
-    let x = 0;
-    let y = window.innerHeight / 2;
-    let t = 0;
-    function fly() {
-      t += 0.01;
-      const dx = Math.cos(t * 1.5) * 100 + Math.sin(t * 0.7) * 100;
-      const dy = Math.sin(t * 1.2) * 100 + Math.cos(t * 0.5) * 100;
-      x += dx * 0.02;
-      y += dy * 0.02;
-      x = Math.max(0, Math.min(window.innerWidth - 60, x));
-      y = Math.max(0, Math.min(window.innerHeight - 60, y));
-      const angle = Math.atan2(dy, dx) * 180 / Math.PI;
-      butterfly.style.left = `${x}px`;
-      butterfly.style.top = `${y}px`;
-      butterfly.style.transform = `rotate(${angle}deg)`;
-      requestAnimationFrame(fly);
-    }
-    fly();
+    
 
     // Modales : contact et à propos
     const contactCard = document.getElementById('contact-card');
